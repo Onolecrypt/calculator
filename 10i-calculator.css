@@ -3,16 +3,21 @@ body {
     font-size: larger;
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    align-items: flex-start; /* Keep content at the top */
     height: 100vh; /* Full viewport height */
     margin: 0;
 }
 
 .calculator-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content */
-    margin-top: 50px; /* Add space from the top */
+    margin-top: 50px; /* Space from the top */
+    text-align: center; /* Center the title */
+}
+
+.calculator {
+    display: inline-block; /* Keep calculator elements in a block instead of spreading out */
+    background-color: rgb(20, 20, 20); /* Optional: Add a background to separate it */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .cal-button {
@@ -24,6 +29,7 @@ body {
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    margin: 5px;
 }
 
 .css-result {
@@ -31,6 +37,10 @@ body {
     font-family: Arial;
     color: white;
     border: none;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+    background: black;
 }
 
 .operator {
@@ -42,6 +52,7 @@ body {
     border: none;
     background-color: rgb(0, 229, 251);
     color: rgb(21, 6, 6);
+    margin: 5px;
 }
 
 .clear-button {
@@ -55,17 +66,10 @@ body {
     border: none;
     outline-offset: 2px;
     outline: 2px solid red;
+    margin: 5px;
 }
 
 .clear-button:hover {
-    font-size: 18px;
-    font-family: Arial;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    background-color: rgb(51, 51, 51);
-    color: rgb(0, 229, 251);
-    border: none;
     outline-offset: 1px;
     outline: 5px solid red;
 }
@@ -73,4 +77,5 @@ body {
 .title {
     font-family: Apple Chancery;
     color: rgb(0, 229, 251);
+    margin-bottom: 10px;
 }
