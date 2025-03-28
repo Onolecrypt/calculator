@@ -14,10 +14,7 @@ body {
 }
 
 .calculator {
-    display: inline-block; /* Keep calculator elements in a block instead of spreading out */
-    background-color: rgb(20, 20, 20); /* Optional: Add a background to separate it */
-    padding: 20px;
-    border-radius: 10px;
+    display: inline-block; /* Keep calculator elements in a block */
 }
 
 .cal-button {
@@ -26,7 +23,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 60px;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(51,51,51);
     color: white;
     border: none;
     margin: 5px;
@@ -37,8 +34,8 @@ body {
     font-family: Arial;
     color: white;
     border: none;
-    width: 100%;
     text-align: right;
+    width: 100%;
     margin-bottom: 10px;
     background: black;
 }
@@ -61,8 +58,8 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 60px;
-    background-color: rgb(51, 51, 51);
-    color: rgb(0, 229, 251);
+    background-color: rgb(51,51,51);
+    color: rgb(0,229,251);
     border: none;
     outline-offset: 2px;
     outline: 2px solid red;
@@ -70,12 +67,20 @@ body {
 }
 
 .clear-button:hover {
+    font-size: 18px;
+    font-family: Arial;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: rgb(51,51,51);
+    color: rgb(0, 229, 251);
+    border: none;
     outline-offset: 1px;
     outline: 5px solid red;
 }
 
 .title {
-    font-family: Apple Chancery;
-    color: rgb(0, 229, 251);
+    font-family: Apple chancery;
+    color: rgb(0,229,251);
     margin-bottom: 10px;
 }
